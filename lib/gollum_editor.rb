@@ -7,7 +7,7 @@ ActionView::Helpers::FormHelper.send(:include, GollumEditor::FormHelper)
 module Rails  
     class GollumEditor < Engine
       initializer :assets do |config|
-        Rails.application.config.assets.precompile += %w( gollum_editor/gollum.js gollum_editor/gollum.css )
+        Rails.application.config.assets.precompile += %w( gollum_editor/gollum.js gollum_editor/gollum.css gollum_editor/icon-sprite.png )
       end
     end
 end
